@@ -89,3 +89,21 @@ O projeto encontra-se pronto para avaliação e deve ser executado localmente.
 Abra o seu terminal (Linha de Comandos) no diretório do projeto e instale as bibliotecas necessárias:
 ```bash
 python -m pip install streamlit pandas plotly pdfplumber fpdf requests
+
+**2. Execução da Solução 1 (Painel de Auditoria):**
+Primeiro, gere os ficheiros de teste executando o script:
+
+Bash
+python gerar_dados_auditoria.py
+Em seguida, inicie a aplicação:
+
+Bash
+python -m streamlit run app.py
+(Carregue o extracao_siga.csv e o relatorio_os.pdf no menu lateral do navegador).
+
+**3. Execução da Solução 2 (Radar Territorial):**
+Para abrir o mapeamento via APIs, interrompa o servidor anterior (Ctrl+C) e execute:
+
+Bash
+python -m streamlit run app_territorio.py
+(Insira um CEP válido, como 01001000 ou 08150000, e prima em "Analisar Território").
